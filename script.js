@@ -22,31 +22,32 @@ function exitMemoryLane() {
 const memoryDetails = {
   memory2: {
     title: "Memory 1",
-    description: "",
+    description:
+      "Pata hai Janhavi yeh photo mujhe hamesha yaad dilati hai woh din jab hum stairs pe chad rahe the tumhari chapal tut gayi thi woh pehla din tha jab tumne mera haath pakda tha us time woh normal tha par aab bhaut he jada sepecial hai.",
     image: "Photos-001 (1)/IMG-20241011-WA0034.jpg",
   },
   memory3: {
     title: "Memory 2",
     description:
-      "This is where things started getting serious for me. I was genuinely thinking about you.",
+      "Pata hai Janhavi yeh photo mujhe hamesha ek gana yaad dilati guess karo konsa??........... yaad aaya?? and now ab jab bhi yeh gana sunta hoon toh woh tasveer yaad aati hai, shyd woh tasveer he hamari kahani ki shuruaat thi.",
     image: "Photos-001 (1)/Snapchat-2085502112.jpg",
   },
   memory6: {
     title: "Memory 3",
     description:
-      "This is where things started getting serious for me. I was genuinely thinking about you.",
+      "Pata hai Janhavi yeh photo mujhe woh din yaad dilati hai jab maine pehli baar tumhe batya tha ki mai kya feel karta hu. Woh auto me baithe hu 20 min kaafi lamba tha par waha se sab hua tha aur mujhe pata chala tha ki mai akela nahi hu jo feel karta hu",
     image: "Photos-001 (1)/IMG20250113143653.jpg",
   },
   memory9: {
     title: "Memory 4",
     description:
-      "This is where things started getting serious for me. I was genuinely thinking about you.",
+      "Pata hai Janhavi yeh photo mujhe Ignite k din yaad dilati jo saaadi me kamal lag rahi thi. Woh din jab humne dance kiya aur uske baad ka woh hug meri life the best hug tha. Woh tha mere liye hamesha relationship ka pehla gift.",
     image: "Photos-001 (1)/IMG-20250218-WA0020.jpg",
   },
   memory12: {
     title: "Memory 5",
     description:
-      "This is where things started getting serious for me. I was genuinely thinking about you.",
+      "Pata hai Janhavi yeh photo kuch yaad nahi dilati bas yeh dikahti hai ki har lambha jo mai tumhare saath rehta hu khush rehta hu,chahta hu ki tum mere saath raho, har waqt, har pal, har din, har saal, har janam. Yeh tasveer kehti ki mahine bas 2 hue hai aur saal abhi bhaut baaki hai.",
     image: "Photos-001 (1)/IMG-20250218-WA0024.jpg",
   },
   // Add more memories here...
