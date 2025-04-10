@@ -16,14 +16,14 @@ body {
 
 h1 {
   color: #ff4d4d;
-  font-size: 3rem;
+  font-size: 2.5rem; /* Adjusted for smaller screens */
   margin-top: 20px;
   text-shadow: 2px 2px 5px #ff9999;
 }
 
 h2 {
   color: #ff4d4d;
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Adjusted for smaller screens */
   margin-top: 15px;
   text-shadow: 1px 1px 3px #ff9999;
   text-align: center;
@@ -39,16 +39,16 @@ div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 15px; /* Reduced gap for smaller screens */
+  margin-top: 20px;
 }
 
 .photos img {
-  width: 200px;
-  height: 200px;
+  width: 150px; /* Adjusted size for smaller screens */
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #ff4d4d;
+  border: 4px solid #ff4d4d; /* Adjusted border size */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -61,12 +61,12 @@ div {
 button.next-button {
   background-color: #ff4d4d;
   color: white;
-  font-size: 1.2rem;
-  padding: 10px 20px;
+  font-size: 1rem; /* Adjusted font size */
+  padding: 8px 15px; /* Adjusted padding */
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -80,15 +80,15 @@ button.next-button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .memory img {
-  width: 300px;
-  height: 300px;
+  width: 250px; /* Adjusted size for smaller screens */
+  height: 250px;
   object-fit: cover;
   border-radius: 15px;
-  border: 5px solid #ff4d4d;
+  border: 4px solid #ff4d4d; /* Adjusted border size */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -101,26 +101,27 @@ button.next-button:hover {
 
 .memory p {
   color: #ff4d4d;
-  font-size: 1.2rem;
+  font-size: 1rem; /* Adjusted font size */
   margin-top: 10px;
   text-align: center;
+  padding-top: 30px; /* Adjusted padding */
 }
 
 .heart-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+  gap: 15px; /* Reduced gap for smaller screens */
+  margin-top: 10px;
 }
 
 .heart-button {
-  font-size: 2rem;
+  font-size: 1.5rem; /* Adjusted size for smaller screens */
   border: 2px solid #ff4d4d;
-  background-color: white; /* Added white background */
+  background-color: white;
   color: inherit;
-  border-radius: 50%; /* Make the button circular */
-  width: 60px;
-  height: 60px;
+  border-radius: 50%;
+  width: 50px; /* Adjusted size */
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,17 +145,18 @@ button.next-button:hover {
 
 .memory-pair {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column; /* Stack images vertically for smaller screens */
+  align-items: center;
+  gap: 15px; /* Reduced gap */
   margin-bottom: 10px;
 }
 
 .memory-pair img {
-  width: 250px; /* Adjusted width for better alignment */
-  height: 250px; /* Adjusted height for better alignment */
+  width: 200px; /* Adjusted size */
+  height: 200px;
   object-fit: cover;
   border-radius: 15px;
-  border: 5px solid #ff4d4d;
+  border: 4px solid #ff4d4d; /* Adjusted border size */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -179,11 +181,11 @@ button.next-button:hover {
 
 .modal-content {
   background-color: white;
-  padding: 20px;
+  padding: 15px; /* Adjusted padding */
   border-radius: 10px;
   text-align: center;
-  width: 80%;
-  max-width: 500px;
+  width: 90%; /* Adjusted width */
+  max-width: 400px; /* Adjusted max width */
 }
 
 .modal-content img {
@@ -191,4 +193,44 @@ button.next-button:hover {
   height: auto;
   border-radius: 10px;
   margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  /* Styles for larger screens */
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .photos img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .memory img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .memory-pair img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .heart-button {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Enable vertical scrolling for phones */
+  html,
+  body {
+    overflow-y: auto; /* Allow vertical scrolling */
+  }
 }
